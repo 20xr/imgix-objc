@@ -16,6 +16,7 @@ FOUNDATION_EXPORT const unsigned char ImgixVersionString[];
 
 #import <Imgix/IGXFormat.h>
 #import <Imgix/IGXCropMode.h>
+#import <Imgix/IGXFit.h>
 #import <Imgix/IGXClient.h>
 #import <Imgix/IGXClient+Adjustment.h>
 #import <Imgix/IGXClient+Background.h>

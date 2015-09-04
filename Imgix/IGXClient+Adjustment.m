@@ -11,6 +11,40 @@
 
 @implementation IGXClient (Adjustment)
 
+-(void) setHeight:(NSInteger)height {
+	NSAssert(height > 0, @"[IGXClient] Invalid height. Value must be at least 1");
+	self.options[@"h"] = @(height);
+}
+
+-(NSInteger) height {
+	return [self.options[@"h"] integerValue];
+}
+
+-(void) setWidth:(NSInteger)width {
+	NSAssert(width > 0, @"[IGXClient] Invalid width. Value must be at least 1");
+	self.options[@"w"] = @(width);
+}
+
+-(NSInteger) width {
+	return [self.options[@"w"] integerValue];
+}
+
+-(void) setCrop:(IGXCropMode)crop {
+	self.options[@"crop"] = IGXCropModeString(crop);
+}
+
+-(IGXCropMode) crop {
+	return IGXCropModeFromString(self.options[@"crop"]);
+}
+
+-(void) setFit:(IGXFit)fit {
+	self.options[@"fit"] = IGXFitString(fit);
+}
+
+-(IGXFit) fit {
+	return IGXFitFromString(self.options[@"fit"]);
+}
+
 - (void)setBrightness:(NSInteger)brightness {
 	NSAssert(brightness >= -100 && brightness <= 100, @"[IGXClient] Invalid brightness. Value must be between -100 and 100.");
 	self.options[@"bri"] = @(brightness);

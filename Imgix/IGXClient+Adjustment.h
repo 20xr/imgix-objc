@@ -7,11 +7,18 @@
 //
 
 #import "IGXClient.h"
+#import "IGXCropMode.h"
+#import "IGXFit.h"
 
 /**
  Make adjustments to an image.
  */
 @interface IGXClient (Adjustment)
+
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic) IGXCropMode crop;
+@property (nonatomic) IGXFit fit;
 
 /**
  Adjusts the brightness of the image. Valid values are in the range `-100` to `100`. The default

@@ -66,7 +66,11 @@
 	NSString *query = [components componentsJoinedByString:@"&"];
 
 	if (self.token) {
-		NSString *input = [[NSString alloc] initWithFormat:@"%@%@?%@", self.token, path, query];
+		NSString *input;
+		if (nil != query && 0 != query.length)
+			input = [[NSString alloc] initWithFormat:@"%@%@?%@", self.token, path, query];
+		else
+			input = [[NSString alloc] initWithFormat:@"%@%@", self.token, path];
 		NSString *signature = [input imgix_MD5];
 		[components addObject:[[NSString alloc] initWithFormat:@"s=%@", signature]];
 		query = [components componentsJoinedByString:@"&"];

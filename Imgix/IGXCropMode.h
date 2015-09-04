@@ -8,6 +8,8 @@
 
 @import Foundation;
 
+#import "IGXNullability.h"
+
 typedef NS_OPTIONS(NSUInteger, IGXCropMode) {
 	/// Default. Crop to the center of the image.
 	IGXCropModeCenter = 0,
@@ -30,3 +32,6 @@ typedef NS_OPTIONS(NSUInteger, IGXCropMode) {
 	 */
 	IGXCropModeFaces = 1 << 4
 };
+
+extern  NSString * __igx_nullable IGXCropModeString(IGXCropMode format);
+extern  IGXCropMode IGXCropModeFromString(NSString *__igx_nullable string);
