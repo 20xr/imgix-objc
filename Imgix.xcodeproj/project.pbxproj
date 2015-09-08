@@ -403,6 +403,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -445,6 +446,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -471,6 +473,7 @@
 				WARNING_CFLAGS = (
 					"-Weverything",
 					"-Wno-missing-variable-declarations",
+					"-Wno-gnu-zero-variadic-macro-arguments",
 				);
 			};
 			name = Debug;
@@ -492,6 +495,7 @@
 				WARNING_CFLAGS = (
 					"-Weverything",
 					"-Wno-missing-variable-declarations",
+					"-Wno-gnu-zero-variadic-macro-arguments",
 				);
 			};
 			name = Release;
