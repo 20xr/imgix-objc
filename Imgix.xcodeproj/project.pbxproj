@@ -38,6 +38,16 @@
 		21EB0CA71B100A9E00CDC863 /* IGXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB0CA51B100A9E00CDC863 /* IGXClient.m */; };
 		23F7E1491B9A51AC002510C6 /* IGXFit.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F7E1471B9A51AC002510C6 /* IGXFit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23F7E14A1B9A51AC002510C6 /* IGXFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E1481B9A51AC002510C6 /* IGXFit.m */; };
+		23F9111D1BA8A60100B595C8 /* IGXClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EB0CA51B100A9E00CDC863 /* IGXClient.m */; };
+		23F9111E1BA8A60100B595C8 /* IGXClient+Adjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109981B10E16200C7738C /* IGXClient+Adjustment.m */; };
+		23F9111F1BA8A60100B595C8 /* IGXClient+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A21B10E28300C7738C /* IGXClient+Background.m */; };
+		23F911201BA8A60100B595C8 /* IGXClient+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1099E1B10E24200C7738C /* IGXClient+Format.m */; };
+		23F911211BA8A60100B595C8 /* IGXClient+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109A91B10E9F800C7738C /* IGXClient+PDF.m */; };
+		23F911221BA8A60100B595C8 /* IGXClient+Stylize.m in Sources */ = {isa = PBXBuildFile; fileRef = 214FC3F01B1136BA00B04DDF /* IGXClient+Stylize.m */; };
+		23F911231BA8A60100B595C8 /* IGXFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F7E1481B9A51AC002510C6 /* IGXFit.m */; };
+		23F911241BA8A60100B595C8 /* IGXFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1098E1B10D82000C7738C /* IGXFormat.m */; };
+		23F911251BA8A60100B595C8 /* IGXCropMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B1098C1B10D7AD00C7738C /* IGXCropMode.m */; };
+		23F911261BA8A60100B595C8 /* NSString+Imgix.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B109831B10CF9100C7738C /* NSString+Imgix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,18 @@
 			remoteInfo = Imgix;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23F911041BA8A58C00B595C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		214FC3EF1B1136BA00B04DDF /* IGXClient+Stylize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IGXClient+Stylize.h"; sourceTree = "<group>"; };
@@ -86,6 +108,7 @@
 		21EB0CA51B100A9E00CDC863 /* IGXClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXClient.m; sourceTree = "<group>"; };
 		23F7E1471B9A51AC002510C6 /* IGXFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGXFit.h; sourceTree = "<group>"; };
 		23F7E1481B9A51AC002510C6 /* IGXFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGXFit.m; sourceTree = "<group>"; };
+		23F911061BA8A58C00B595C8 /* libImgixLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImgixLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +124,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				21EB0C941B10074F00CDC863 /* Imgix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F911031BA8A58C00B595C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +209,7 @@
 			children = (
 				21EB0C881B10074F00CDC863 /* Imgix.framework */,
 				21EB0C931B10074F00CDC863 /* ImgixTests.xctest */,
+				23F911061BA8A58C00B595C8 /* libImgixLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,6 +297,23 @@
 			productReference = 21EB0C931B10074F00CDC863 /* ImgixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		23F911051BA8A58C00B595C8 /* ImgixLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F911171BA8A58C00B595C8 /* Build configuration list for PBXNativeTarget "ImgixLib" */;
+			buildPhases = (
+				23F911021BA8A58C00B595C8 /* Sources */,
+				23F911031BA8A58C00B595C8 /* Frameworks */,
+				23F911041BA8A58C00B595C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImgixLib;
+			productName = ImgixLib;
+			productReference = 23F911061BA8A58C00B595C8 /* libImgixLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -280,6 +328,9 @@
 					};
 					21EB0C921B10074F00CDC863 = {
 						CreatedOnToolsVersion = 6.3.2;
+					};
+					23F911051BA8A58C00B595C8 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -297,6 +348,7 @@
 			targets = (
 				21EB0C871B10074E00CDC863 /* Imgix */,
 				21EB0C921B10074F00CDC863 /* ImgixTests */,
+				23F911051BA8A58C00B595C8 /* ImgixLib */,
 			);
 		};
 /* End PBXProject section */
@@ -347,6 +399,23 @@
 				21BAB12E1B1107D700D32A0C /* TestHelper.m in Sources */,
 				21B109941B10DB7100C7738C /* QueryTests.m in Sources */,
 				21BAB1281B11078100D32A0C /* BackgroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F911021BA8A58C00B595C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F9111D1BA8A60100B595C8 /* IGXClient.m in Sources */,
+				23F9111E1BA8A60100B595C8 /* IGXClient+Adjustment.m in Sources */,
+				23F9111F1BA8A60100B595C8 /* IGXClient+Background.m in Sources */,
+				23F911201BA8A60100B595C8 /* IGXClient+Format.m in Sources */,
+				23F911211BA8A60100B595C8 /* IGXClient+PDF.m in Sources */,
+				23F911221BA8A60100B595C8 /* IGXClient+Stylize.m in Sources */,
+				23F911231BA8A60100B595C8 /* IGXFit.m in Sources */,
+				23F911241BA8A60100B595C8 /* IGXFormat.m in Sources */,
+				23F911251BA8A60100B595C8 /* IGXCropMode.m in Sources */,
+				23F911261BA8A60100B595C8 /* NSString+Imgix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +601,38 @@
 			};
 			name = Release;
 		};
+		23F911181BA8A58C00B595C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		23F911191BA8A58C00B595C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,6 +662,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		23F911171BA8A58C00B595C8 /* Build configuration list for PBXNativeTarget "ImgixLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F911181BA8A58C00B595C8 /* Debug */,
+				23F911191BA8A58C00B595C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

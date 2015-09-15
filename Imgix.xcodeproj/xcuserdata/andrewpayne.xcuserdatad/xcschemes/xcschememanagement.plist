@@ -2,6 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Imgix.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>ImgixLib.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>21EB0C871B10074E00CDC863</key>
@@ -10,6 +27,21 @@
 			<true/>
 		</dict>
 		<key>21EB0C921B10074F00CDC863</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23F910E11BA8A55000B595C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23F911051BA8A58C00B595C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23F9110F1BA8A58C00B595C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
